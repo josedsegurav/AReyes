@@ -1,6 +1,5 @@
 import Header from "@/components/header";
-import Image from "next/image";
-import { Roboto_Mono, Roboto_Condensed, Bodoni_Moda } from "next/font/google";
+import { Bodoni_Moda } from "next/font/google";
 import bg from '../../public/images/background.png';
 
 const bodoni = Bodoni_Moda({

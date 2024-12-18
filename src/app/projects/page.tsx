@@ -1,7 +1,13 @@
 import Header from "@/components/header";
+import { promises as fs} from 'fs';
+
+export default async function Portofolio() {
+    const path = process.cwd() + "/app/projects.json";
+    const file = await fs.readFile(path, "utf8");
+    const projects = JSON.parse(file);
 
 
-export default function Projects() {
+
     return (
       <div>
         <main>
@@ -15,6 +21,14 @@ export default function Projects() {
                 <button className="bg-blue-600 text-white px-4 py-2 rounded-full mr-4">Commercial</button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {
+                    projects.map((project) => {
+                        return (
+                <a className="block" href="#project1">{project.id}
+                <img id="imgProject1" src="./" alt="3M Project" className="w-full h-auto rounded shadow"/>
+            </a>
+                    )})
+                }
                 <a className="block" href="#project1">
                     <img id="imgProject1" src="./" alt="3M Project" className="w-full h-auto rounded shadow"/>
                 </a>

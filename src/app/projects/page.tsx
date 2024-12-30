@@ -1,9 +1,17 @@
 import Header from "@/components/header";
 import projects from "../api/projects.json";
 import Image from "next/image";
+import Link from "next/link";
+import Footer from "@/components/footer";
 
-export default function Portofolio() {
-  console.log(projects[0].images);
+export default async function Portofolio() {
+
+    let data = projects.map((project: any) => (
+        {
+            
+        }
+    ))
+ 
   return (
     <>
       <div>
@@ -28,7 +36,7 @@ export default function Portofolio() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {projects.map((project) => (
                   <div key={project.id}>
-                    <a className="block" href="#project1">
+                    <Link className="block" href={`/projects/${project.name}`}>
                       {project.name}
 
                       <Image
@@ -38,7 +46,7 @@ export default function Portofolio() {
                         alt="3M Project"
                         className="w-full h-auto rounded shadow"
                       ></Image>
-                    </a>
+                    </Link>
                   </div>
                 ))}
 
@@ -65,6 +73,7 @@ export default function Portofolio() {
             </div>
           </section>
         </main>
+        <Footer></Footer>
       </div>
     </>
   );

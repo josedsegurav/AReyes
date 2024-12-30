@@ -3,7 +3,7 @@ module.exports = {
 
   images: {
 
-    domains: ['drive.usercontent.google.com', 'drive.google.com'] // Add 'drive.google.com' to allowed domains
+    domains: ['drive.usercontent.google.com', 'drive.google.com', 'https://placehold.co'] // Add 'drive.google.com' to allowed domains
 
   }
 

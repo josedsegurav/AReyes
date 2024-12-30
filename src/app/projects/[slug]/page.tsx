@@ -1,8 +1,9 @@
 export default async function Page({
     params,
   }: {
-    params: Promise<{ slug: string }>
+    params: Promise<{ slug: string, post: object }>
   }) {
     const slug = (await params).slug
-    return <div>My Post: {slug}</div>
+    const post = (await params).post
+    return <div>My Post: {name}</div>
   }

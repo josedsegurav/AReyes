@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Roboto_Mono, Roboto_Condensed, Bodoni_Moda } from "next/font/google";
 import "./globals.css";
 
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],

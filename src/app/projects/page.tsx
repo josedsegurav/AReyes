@@ -6,12 +6,6 @@ import Footer from "@/components/footer";
 
 export default async function Portofolio() {
 
-    let data = projects.map((project: any) => (
-        {
-            
-        }
-    ))
- 
   return (
     <>
       <div>

@@ -1,4 +1,3 @@
-import { postcss } from "tailwindcss";
 import Image from 'next/image';
 import projects from '../../api/projects.json';
 import Header from "@/components/header";

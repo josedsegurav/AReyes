@@ -28,7 +28,7 @@ export default function Page () {
             </div>
             <div className="mb-4">
                 <label className="block text-gray-700 mb-2" htmlFor="message">Message</label>
-                <textarea id="message" className="w-full px-4 py-2 border rounded" rows="4" placeholder="Your Message"></textarea>
+                <textarea id="message" className="w-full px-4 py-2 border rounded" rows={4} placeholder="Your Message"></textarea>
             </div>
             <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded-full font-bold">Send Message</button>
         </form>

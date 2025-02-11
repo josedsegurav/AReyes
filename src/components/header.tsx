@@ -9,9 +9,9 @@ export default function Header () {
                 <span className="text-xl font-bold"><Link href="/">Andrea Reyes</Link></span>
             </div>
             <div className="flex space-x-6">
-                    <Link className="text-gray-800 hover:text-blue-600" href="./about">About</Link>
-                <Link className="text-gray-800 hover:text-blue-600" href="./projects/">Projects</Link>
-                <Link className="text-gray-800 hover:text-blue-600" href="./contact">Contact</Link>
+                    <Link className="text-gray-800 hover:text-blue-600" href="/about">About</Link>
+                <Link className="text-gray-800 hover:text-blue-600" href="/projects/">Projects</Link>
+                <Link className="text-gray-800 hover:text-blue-600" href="/contact">Contact</Link>
             </div>
         </div>
     </nav>
